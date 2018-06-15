@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package helloPkg;
+
+service HelloService {
+    rpc HelloStream (stream HelloStreamRequest) returns (stream HelloStreamResponse);
+}
+
+enum Command {
+    DEFAULT = 0;
+    DESTROY = 1;
+    DESTROY_WITH_ERROR = 2;
+}
+
+message HelloStreamRequest {
+    Command command = 1;
+    string text = 2;
+}
+
+message HelloStreamResponse {
+    Command command = 1;
+    string text = 2;
+    bool isFinal = 3;
+}

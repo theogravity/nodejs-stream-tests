@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-stream-tests",
+  "version": "1.0.0",
+  "description": "Examples of what does what in nodejs streams",
+  "private": true,
+  "scripts": {
+    "test:grpc": "node --require babel-register ./src/grpc.js",
+    "test:http-client": "node --require babel-register ./src/http-client.js",
+    "test:mock-duplex": "node --require babel-register ./src/mock-duplex.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theogravity/nodejs-stream-tests.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theogravity/nodejs-stream-tests/issues"
+  },
+  "homepage": "https://github.com/theogravity/nodejs-stream-tests#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "grpc": "1.12.2",
+    "shortid": "^2.2.8",
+    "stream-mock": "^1.2.0"
+  }
+}
