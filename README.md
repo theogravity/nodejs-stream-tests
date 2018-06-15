@@ -1,9 +1,9 @@
 # nodejs-stream-tests
 
-Examples of how streams in nodejs respond based on certain API calls, such as `end()`, `destroy()`.
+Examples of how streams in nodejs respond based on certain API calls, such as `end()` / `destroy()` and their placement in the event handlers on the server / client side.
 
 - `test:grpc` to test a set of grpc flows
-- `test:http-client` to test the node `requestClient` flows
+- `test:http-client` to test the node http `requestClient` `req` / `res` flows
 - `test:mock-duplex` to test against a mock duplex stream
 
 Example run:
